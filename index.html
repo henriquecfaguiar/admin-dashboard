@@ -16,9 +16,175 @@
   <body>
     <!-- Global Container -->
     <div
-      class="mx-auto grid min-h-screen grid-cols-[minmax(200px,_1fr)_4fr] grid-rows-[minmax(150px,_1fr)_6fr]"
+      class="mx-auto grid min-h-screen grid-cols-[minmax(200px,_1fr)_4fr] grid-rows-[minmax(150px,_1fr)_5fr]"
     >
-      <header class=""></header>
+      <!-- Header -->
+      <header class="">
+        <!-- Header Container -->
+        <div class="space-y-12 bg-white px-10 py-6 text-black shadow-lg">
+          <!-- Search Bar & Profile -->
+          <div class="flex items-center justify-between">
+            <!-- Search Bar -->
+            <div class="flex items-center justify-center space-x-4">
+              <img
+                src="./images/magnify-icon.svg"
+                alt="search icon"
+                class="w-6 cursor-pointer"
+              />
+              <input
+                type="text"
+                class="w-[600px] rounded-full bg-gray-200 py-1 px-3"
+              />
+            </div>
+            <!-- Profile -->
+            <div class="flex items-center justify-between space-x-6">
+              <img
+                src="./images/bell-ring-icon.svg"
+                alt="notifications icon"
+                class="w-6 cursor-pointer"
+              />
+              <svg
+                viewBox="0 0 36 36"
+                fill="none"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+              >
+                <title>Grace Hopper</title>
+                <mask
+                  id="mask__beam"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="36"
+                  height="36"
+                >
+                  <rect width="36" height="36" fill="#FFFFFF" rx="72"></rect>
+                </mask>
+                <g mask="url(#mask__beam)">
+                  <rect width="36" height="36" fill="#601848"></rect>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="36"
+                    height="36"
+                    transform="translate(0 8) rotate(44 18 18) scale(1.2)"
+                    fill="#f07241"
+                    rx="36"
+                  ></rect>
+                  <g transform="translate(-4 4) rotate(-4 18 18)">
+                    <path d="M13,21 a1,0.75 0 0,0 10,0" fill="#000000"></path>
+                    <rect
+                      x="10"
+                      y="14"
+                      width="1.5"
+                      height="2"
+                      rx="1"
+                      stroke="none"
+                      fill="#000000"
+                    ></rect>
+                    <rect
+                      x="24"
+                      y="14"
+                      width="1.5"
+                      height="2"
+                      rx="1"
+                      stroke="none"
+                      fill="#000000"
+                    ></rect>
+                  </g>
+                </g>
+              </svg>
+              <h4 class="text-lg font-semibold">Morgan Oakley</h4>
+            </div>
+          </div>
+          <!-- Greating & Menu -->
+          <div class="flex items-center justify-between">
+            <!-- Greeting Container -->
+            <div class="flex items-center justify-center space-x-6 pl-4">
+              <svg
+                viewBox="0 0 36 36"
+                fill="none"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                class="scale-150"
+              >
+                <title>Grace Hopper</title>
+                <mask
+                  id="mask__beam"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="36"
+                  height="36"
+                >
+                  <rect width="36" height="36" fill="#FFFFFF" rx="72"></rect>
+                </mask>
+                <g mask="url(#mask__beam)">
+                  <rect width="36" height="36" fill="#601848"></rect>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="36"
+                    height="36"
+                    transform="translate(0 8) rotate(44 18 18) scale(1.2)"
+                    fill="#f07241"
+                    rx="36"
+                  ></rect>
+                  <g transform="translate(-4 4) rotate(-4 18 18)">
+                    <path d="M13,21 a1,0.75 0 0,0 10,0" fill="#000000"></path>
+                    <rect
+                      x="10"
+                      y="14"
+                      width="1.5"
+                      height="2"
+                      rx="1"
+                      stroke="none"
+                      fill="#000000"
+                    ></rect>
+                    <rect
+                      x="24"
+                      y="14"
+                      width="1.5"
+                      height="2"
+                      rx="1"
+                      stroke="none"
+                      fill="#000000"
+                    ></rect>
+                  </g>
+                </g>
+              </svg>
+              <div class="flex flex-col font-semibold">
+                <p class="text-xs">Hi there,</p>
+                <h2 class="text-2xl">Morgan Oakley (@morgan)</h2>
+              </div>
+            </div>
+            <!-- Menu Container -->
+            <div
+              class="grid grid-cols-3 justify-items-stretch gap-4 text-white"
+            >
+              <button
+                class="rounded-full border-2 border-blue-500 bg-blue-500 px-6 py-2 text-center duration-200 hover:bg-white hover:text-blue-500"
+              >
+                New
+              </button>
+              <button
+                class="rounded-full border-2 border-blue-500 bg-blue-500 px-6 py-2 text-center duration-200 hover:bg-white hover:text-blue-500"
+              >
+                Upload
+              </button>
+              <button
+                class="rounded-full border-2 border-blue-500 bg-blue-500 px-6 py-2 text-center duration-200 hover:bg-white hover:text-blue-500"
+              >
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
       <!-- Sidebar -->
       <section id="sidebar" class="row-start-1 row-end-3 bg-blue-500">
         <!-- Sidebar Container -->
@@ -37,7 +203,7 @@
           <!-- Sidebar Menu 1 -->
           <div class="space-y-4 px-3">
             <!-- Item 1 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/home-icon.svg"
                 alt=""
@@ -46,7 +212,7 @@
               <h3>Home</h3>
             </a>
             <!-- Item 2 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/profile-icon.svg"
                 alt=""
@@ -55,7 +221,7 @@
               <h3>Profile</h3>
             </a>
             <!-- Item 3 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/message-icon.svg"
                 alt=""
@@ -64,7 +230,7 @@
               <h3>Messages</h3>
             </a>
             <!-- Item 4 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/history-icon.svg"
                 alt=""
@@ -73,7 +239,7 @@
               <h3>History</h3>
             </a>
             <!-- Item 5 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/tasks-icon.svg"
                 alt=""
@@ -82,7 +248,7 @@
               <h3>Tasks</h3>
             </a>
             <!-- Item 6 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/community-icon.svg"
                 alt=""
@@ -90,11 +256,11 @@
               />
               <h3>Communities</h3>
             </a>
-          </a>
+          </div>
           <!-- Sidebar Menu 2 -->
-          <a class="space-y-4 px-3">
+          <div class="space-y-4 px-3">
             <!-- Item 1 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/cog-icon.svg"
                 alt=""
@@ -103,7 +269,7 @@
               <h3>Settings</h3>
             </a>
             <!-- Item 2 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/support-icon.svg"
                 alt=""
@@ -112,7 +278,7 @@
               <h3>Support</h3>
             </a>
             <!-- Item 3 -->
-            <a href="#" class="flex items-center max-w-fit space-x-3">
+            <a href="#" class="flex max-w-fit items-center space-x-3">
               <img
                 src="./images/privacy-icon.svg"
                 alt=""
