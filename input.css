@@ -6,3 +6,8 @@
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);
 }
+
+.ficon-orange:hover {
+  filter: brightness(0) saturate(100%) invert(63%) sepia(53%) saturate(6010%)
+    hue-rotate(353deg) brightness(105%) contrast(95%);
+}
