@@ -7,8 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
       rel="shortcut icon"
@@ -21,7 +25,7 @@
   <body>
     <!-- Global Container -->
     <div
-      class="mx-auto grid min-h-screen grid-cols-[300px_1fr] grid-rows-[180px_1fr] bg-gray-100"
+      class="mx-auto grid min-h-screen grid-cols-[300px_1fr] grid-rows-[180px_1fr_50px] bg-gray-100"
     >
       <!-- Header -->
       <header class="space-y-12 bg-white px-10 py-6 text-black shadow-md">
@@ -933,6 +937,19 @@
           </div>
         </div>
       </main>
+      <footer
+        class="font-JetBrainsMono col-span-2 flex items-center justify-center space-x-2 bg-gray-800 py-2 text-white"
+      >
+        <p class="text-sm md:text-lg">
+          Made with <span class="filter-red text-xl">&#9829;</span> by
+          henriquecfaguiar
+        </p>
+        <a
+          href="https://github.com/henriquecfaguiar"
+          class="text-2xl duration-200 hover:opacity-50 md:text-3xl"
+          ><i class="fa fa-github"></i
+        ></a>
+      </footer>
     </div>
   </body>
 </html>
