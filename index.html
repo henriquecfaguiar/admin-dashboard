@@ -16,10 +16,10 @@
   <body>
     <!-- Global Container -->
     <div
-      class="mx-auto grid min-h-screen grid-cols-[minmax(200px,_1fr)_4fr] grid-rows-[180px_1fr] bg-gray-100"
+      class="mx-auto grid min-h-screen grid-cols-[300px_4fr] grid-rows-[180px_1fr] bg-gray-100"
     >
       <!-- Header -->
-      <header class="space-y-12 bg-white px-10 py-6 text-black shadow-lg">
+      <header class="space-y-12 bg-white px-10 py-6 text-black shadow-md">
         <!-- Search Bar & Profile -->
         <div class="flex items-center justify-between">
           <!-- Search Bar -->
@@ -27,11 +27,11 @@
             <img
               src="./images/magnify-icon.svg"
               alt="search icon"
-              class="w-6 cursor-pointer"
+              class="ficon-blue w-6 cursor-pointer"
             />
             <input
               type="text"
-              class="w-[600px] rounded-full bg-gray-200 py-1 px-3"
+              class="w-[600px] rounded-full bg-gray-200 py-1 px-3 focus-visible:border-2 focus-visible:border-blue-500 focus-visible:outline-none"
             />
           </div>
           <!-- Profile -->
@@ -39,7 +39,7 @@
             <img
               src="./images/bell-ring-icon.svg"
               alt="notifications icon"
-              class="ficon-orange w-6 cursor-pointer"
+              class="ficon-red w-6 cursor-pointer"
             />
             <svg
               viewBox="0 0 36 36"
@@ -49,7 +49,7 @@
               width="40"
               height="40"
             >
-              <title>Grace Hopper</title>
+              <title>Morgan Oakley</title>
               <mask
                 id="mask__beam"
                 maskUnits="userSpaceOnUse"
@@ -198,9 +198,12 @@
             <h1 class="text-3xl font-bold">Dashboard</h1>
           </div>
           <!-- Sidebar Menu 1 -->
-          <div class="space-y-4 px-3">
+          <div class="space-y-2 px-3">
             <!-- Item 1 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/home-icon.svg"
                 alt=""
@@ -209,7 +212,10 @@
               <h3>Home</h3>
             </a>
             <!-- Item 2 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/profile-icon.svg"
                 alt=""
@@ -218,7 +224,10 @@
               <h3>Profile</h3>
             </a>
             <!-- Item 3 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/message-icon.svg"
                 alt=""
@@ -227,7 +236,10 @@
               <h3>Messages</h3>
             </a>
             <!-- Item 4 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/history-icon.svg"
                 alt=""
@@ -236,7 +248,10 @@
               <h3>History</h3>
             </a>
             <!-- Item 5 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/tasks-icon.svg"
                 alt=""
@@ -245,7 +260,10 @@
               <h3>Tasks</h3>
             </a>
             <!-- Item 6 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/community-icon.svg"
                 alt=""
@@ -255,9 +273,12 @@
             </a>
           </div>
           <!-- Sidebar Menu 2 -->
-          <div class="space-y-4 px-3">
+          <div class="space-y-2 px-3">
             <!-- Item 1 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/cog-icon.svg"
                 alt=""
@@ -266,7 +287,10 @@
               <h3>Settings</h3>
             </a>
             <!-- Item 2 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/support-icon.svg"
                 alt=""
@@ -275,7 +299,10 @@
               <h3>Support</h3>
             </a>
             <!-- Item 3 -->
-            <a href="#" class="flex max-w-fit items-center space-x-3">
+            <a
+              href="#"
+              class="flex max-w-fit items-center space-x-3 border-b-2 border-b-transparent pb-[1px] duration-200 hover:border-white"
+            >
               <img
                 src="./images/privacy-icon.svg"
                 alt=""
@@ -287,11 +314,14 @@
         </div>
       </nav>
       <main>
-        <!-- Projects & Info Panel Container -->
-        <div class="grid h-full grid-cols-[1fr_350px] gap-4 p-4 text-black">
+        <!-- Projects & Info Panel -->
+        <div
+          class="grid h-full grid-cols-[minmax(700px,_950px)_350px] gap-4 p-4 text-black"
+        >
+          <!-- Projects Container -->
           <div class="">
-            <h4 class="mb-2 text-left text-xl font-semibold">Your Projects</h4>
-            <!-- Projects Container -->
+            <h4 class="mb-2 text-left text-lg font-semibold">Your Projects</h4>
+            <!-- Projects Grid -->
             <div
               class="grid grid-cols-[repeat(2,450px)] grid-rows-[repeat(3,220px)] gap-6"
             >
@@ -299,7 +329,7 @@
               <div
                 class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
-                <h5 class="text-left text-lg">Super Cool Project</h5>
+                <h5 class="text-md text-left">Super Cool Project</h5>
                 <p class="max-w-xs text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
@@ -328,7 +358,7 @@
               <div
                 class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
-                <h5 class="text-left text-lg">Less Cool Project</h5>
+                <h5 class="text-md text-left">Less Cool Project</h5>
                 <p class="max-w-xs text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
@@ -357,7 +387,7 @@
               <div
                 class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
-                <h5 class="text-left text-lg">Impossible App</h5>
+                <h5 class="text-md text-left">Impossible App</h5>
                 <p class="max-w-xs text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
@@ -386,7 +416,7 @@
               <div
                 class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
-                <h5 class="text-left text-lg">Easy Peasy App</h5>
+                <h5 class="text-md text-left">Easy Peasy App</h5>
                 <p class="max-w-xs text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
@@ -415,7 +445,7 @@
               <div
                 class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
-                <h5 class="text-left text-lg">Ad Blocker</h5>
+                <h5 class="text-md text-left">Ad Blocker</h5>
                 <p class="max-w-xs text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
@@ -444,7 +474,7 @@
               <div
                 class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
-                <h5 class="text-left text-lg">Money Maker</h5>
+                <h5 class="text-md text-left">Money Maker</h5>
                 <p class="max-w-xs text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
@@ -467,6 +497,337 @@
                     alt=""
                     class="ficon-orange w-6 cursor-pointer duration-150"
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Announcements & Trending -->
+          <div class="">
+            <!-- Announcements Container -->
+            <div class="">
+              <!-- Announcements Title -->
+              <h4 class="mb-2 text-left text-lg font-semibold">
+                Announcements
+              </h4>
+              <!-- Announcements Card Container -->
+              <div
+                class="flex flex-col gap-4 rounded-lg bg-white px-6 py-6 shadow-md"
+              >
+                <!-- Item 1 -->
+                <div class="px-4">
+                  <h6 class="text-left text-sm font-semibold">
+                    Site Maintenance
+                  </h6>
+                  <p class="text-xs text-gray-500">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, vero consectetur! Beatae eligendi itaque, quis.
+                  </p>
+                </div>
+                <!-- Border -->
+                <div class="border-b"></div>
+                <!-- Item 2 -->
+                <div class="px-4">
+                  <h6 class="text-left text-sm font-semibold">
+                    Community Share Day
+                  </h6>
+                  <p class="text-xs text-gray-500">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, vero consectetur! Beatae eligendi itaque, quis.
+                  </p>
+                </div>
+                <!-- Border -->
+                <div class="border-b"></div>
+                <!-- Item 3 -->
+                <div class="px-4">
+                  <h6 class="text-left text-sm font-semibold">
+                    Updated Privacy Policy
+                  </h6>
+                  <p class="text-xs text-gray-500">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, vero consectetur! Beatae eligendi itaque, quis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Trending Container -->
+            <div class="">
+              <!-- Trending Title -->
+              <h4 class="mb-2 text-left text-lg font-semibold">Trending</h4>
+              <!-- Trending Card Container -->
+              <div
+                class="flex flex-col gap-4 rounded-lg bg-white px-6 py-6 shadow-md"
+              >
+                <!-- Item 1 -->
+                <div class="flex items-center gap-4">
+                  <svg
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                  >
+                    <title>Susan B</title>
+                    <mask
+                      id="mask__beam"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="36"
+                      height="36"
+                    >
+                      <rect
+                        width="36"
+                        height="36"
+                        rx="72"
+                        fill="#FFFFFF"
+                      ></rect>
+                    </mask>
+                    <g mask="url(#mask__beam)">
+                      <rect width="36" height="36" fill="#aae6d9"></rect>
+                      <rect
+                        x="0"
+                        y="0"
+                        width="36"
+                        height="36"
+                        transform="translate(-4 8) rotate(88 18 18) scale(1.1)"
+                        fill="#e6b0aa"
+                        rx="36"
+                      ></rect>
+                      <g transform="translate(0 4) rotate(8 18 18)">
+                        <path
+                          d="M13,20 a1,0.75 0 0,0 10,0"
+                          fill="#000000"
+                        ></path>
+                        <rect
+                          x="11"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#000000"
+                        ></rect>
+                        <rect
+                          x="23"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#000000"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                  <div>
+                    <p class="text-sm">@susan</p>
+                    <p class="text-xs text-gray-500">World Peace Builder</p>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="flex items-center gap-4">
+                  <svg
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                  >
+                    <title>Morgan Oakley</title>
+                    <mask
+                      id="mask__beam"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="36"
+                      height="36"
+                    >
+                      <rect
+                        width="36"
+                        height="36"
+                        fill="#FFFFFF"
+                        rx="72"
+                      ></rect>
+                    </mask>
+                    <g mask="url(#mask__beam)">
+                      <rect width="36" height="36" fill="#601848"></rect>
+                      <rect
+                        x="0"
+                        y="0"
+                        width="36"
+                        height="36"
+                        transform="translate(0 8) rotate(44 18 18) scale(1.2)"
+                        fill="#f07241"
+                        rx="36"
+                      ></rect>
+                      <g transform="translate(-4 4) rotate(-4 18 18)">
+                        <path
+                          d="M13,21 a1,0.75 0 0,0 10,0"
+                          fill="#000000"
+                        ></path>
+                        <rect
+                          x="10"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#000000"
+                        ></rect>
+                        <rect
+                          x="24"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#000000"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                  <div>
+                    <p class="text-sm">@morgan</p>
+                    <p class="text-xs text-gray-500">Super Cool Project</p>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="flex items-center gap-4">
+                  <svg
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                  >
+                    <title>Elizabeth Cady</title>
+                    <mask
+                      id="mask__beam"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="36"
+                      height="36"
+                    >
+                      <rect
+                        width="36"
+                        height="36"
+                        rx="72"
+                        fill="#FFFFFF"
+                      ></rect>
+                    </mask>
+                    <g mask="url(#mask__beam)">
+                      <rect width="36" height="36" fill="#1e0c42"></rect>
+                      <rect
+                        x="0"
+                        y="0"
+                        width="36"
+                        height="36"
+                        transform="translate(7 7) rotate(333 18 18) scale(1)"
+                        fill="#f5be58"
+                        rx="6"
+                      ></rect>
+                      <g transform="translate(3.5 3.5) rotate(-3 18 18)">
+                        <path
+                          d="M13,19 a1,0.75 0 0,0 10,0"
+                          fill="#000000"
+                        ></path>
+                        <rect
+                          x="11"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#000000"
+                        ></rect>
+                        <rect
+                          x="23"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#000000"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                  <div>
+                    <p class="text-sm">@elizabeth</p>
+                    <p class="text-xs text-gray-500">Life Changing App</p>
+                  </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="flex items-center gap-4">
+                  <svg
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                  >
+                    <title>Maud Nathan</title>
+                    <mask
+                      id="mask__beam"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="36"
+                      height="36"
+                    >
+                      <rect
+                        width="36"
+                        height="36"
+                        rx="72"
+                        fill="#FFFFFF"
+                      ></rect>
+                    </mask>
+                    <g mask="url(#mask__beam)">
+                      <rect width="36" height="36" fill="#1f1f20"></rect>
+                      <rect
+                        x="0"
+                        y="0"
+                        width="36"
+                        height="36"
+                        transform="translate(-3 7) rotate(87 18 18) scale(1)"
+                        fill="#567ebb"
+                        rx="36"
+                      ></rect>
+                      <g transform="translate(-7 3.5) rotate(-7 18 18)">
+                        <path
+                          d="M13,19 a1,0.75 0 0,0 10,0"
+                          fill="#FFFFFF"
+                        ></path>
+                        <rect
+                          x="12"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#FFFFFF"
+                        ></rect>
+                        <rect
+                          x="22"
+                          y="14"
+                          width="1.5"
+                          height="2"
+                          rx="1"
+                          stroke="none"
+                          fill="#FFFFFF"
+                        ></rect>
+                      </g>
+                    </g>
+                  </svg>
+                  <div>
+                    <p class="text-sm">@maud</p>
+                    <p class="text-xs text-gray-500">No Traffic Maker</p>
+                  </div>
                 </div>
               </div>
             </div>
