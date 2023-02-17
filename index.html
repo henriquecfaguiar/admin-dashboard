@@ -10,20 +10,27 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./images/dashboard-favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Admin Dashboard</title>
   </head>
   <body>
     <!-- Global Container -->
     <div
-      class="mx-auto grid min-h-screen grid-cols-[300px_4fr] grid-rows-[180px_1fr] bg-gray-100"
+      class="mx-auto grid min-h-screen grid-cols-[300px_1fr] grid-rows-[180px_1fr] bg-gray-100"
     >
       <!-- Header -->
       <header class="space-y-12 bg-white px-10 py-6 text-black shadow-md">
         <!-- Search Bar & Profile -->
         <div class="flex items-center justify-between">
           <!-- Search Bar -->
-          <div class="flex items-center justify-center space-x-4">
+          <div
+            class="flex w-1/2 max-w-2xl items-center justify-center space-x-4"
+          >
             <img
               src="./images/magnify-icon.svg"
               alt="search icon"
@@ -31,7 +38,7 @@
             />
             <input
               type="text"
-              class="w-[600px] rounded-full bg-gray-200 py-1 px-3 focus-visible:border-2 focus-visible:border-blue-500 focus-visible:outline-none"
+              class="w-full rounded-full bg-gray-200 py-1 px-3 focus-visible:border-2 focus-visible:border-blue-500 focus-visible:outline-none"
             />
           </div>
           <!-- Profile -->
@@ -48,6 +55,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="40"
               height="40"
+              class="cursor-pointer hover:opacity-70"
             >
               <title>Morgan Oakley</title>
               <mask
@@ -94,7 +102,11 @@
                 </g>
               </g>
             </svg>
-            <h4 class="text-lg font-semibold">Morgan Oakley</h4>
+            <h4
+              class="ficon-orange cursor-pointer text-lg font-semibold hover:opacity-70"
+            >
+              Morgan Oakley
+            </h4>
           </div>
         </div>
         <!-- Greating & Menu -->
@@ -316,28 +328,28 @@
       <main>
         <!-- Projects & Info Panel -->
         <div
-          class="grid h-full grid-cols-[minmax(700px,_950px)_350px] gap-4 p-4 text-black"
+          class="grid grid-cols-[minmax(0,1fr)_minmax(200px,350px)] gap-8 px-10 py-4 text-black"
         >
           <!-- Projects Container -->
-          <div class="">
+          <div>
             <h4 class="mb-2 text-left text-lg font-semibold">Your Projects</h4>
             <!-- Projects Grid -->
             <div
-              class="grid grid-cols-[repeat(2,450px)] grid-rows-[repeat(3,220px)] gap-6"
+              class="grid grid-cols-[repeat(auto-fit,minmax(265px,1fr))] gap-6"
             >
               <!-- Project 1 -->
               <div
-                class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
                 <h5 class="text-md text-left">Super Cool Project</h5>
-                <p class="max-w-xs text-sm text-gray-400">
+                <p class="max-w-md text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
                   ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
                   odit.
                 </p>
                 <div
-                  class="mt-6 ml-auto flex max-w-fit items-center justify-between gap-6"
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
                 >
                   <img
                     src="./images/star-plus-icon.svg"
@@ -356,17 +368,17 @@
               </div>
               <!-- Project 2 -->
               <div
-                class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
                 <h5 class="text-md text-left">Less Cool Project</h5>
-                <p class="max-w-xs text-sm text-gray-400">
+                <p class="max-w-md text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
                   ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
                   odit.
                 </p>
                 <div
-                  class="mt-6 ml-auto flex max-w-fit items-center justify-between gap-6"
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
                 >
                   <img
                     src="./images/star-plus-icon.svg"
@@ -385,17 +397,17 @@
               </div>
               <!-- Project 3 -->
               <div
-                class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
                 <h5 class="text-md text-left">Impossible App</h5>
-                <p class="max-w-xs text-sm text-gray-400">
+                <p class="max-w-md text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
                   ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
                   odit.
                 </p>
                 <div
-                  class="mt-6 ml-auto flex max-w-fit items-center justify-between gap-6"
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
                 >
                   <img
                     src="./images/star-plus-icon.svg"
@@ -414,17 +426,17 @@
               </div>
               <!-- Project 4 -->
               <div
-                class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
                 <h5 class="text-md text-left">Easy Peasy App</h5>
-                <p class="max-w-xs text-sm text-gray-400">
+                <p class="max-w-md text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
                   ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
                   odit.
                 </p>
                 <div
-                  class="mt-6 ml-auto flex max-w-fit items-center justify-between gap-6"
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
                 >
                   <img
                     src="./images/star-plus-icon.svg"
@@ -443,17 +455,17 @@
               </div>
               <!-- Project 5 -->
               <div
-                class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
                 <h5 class="text-md text-left">Ad Blocker</h5>
-                <p class="max-w-xs text-sm text-gray-400">
+                <p class="max-w-md text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
                   ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
                   odit.
                 </p>
                 <div
-                  class="mt-6 ml-auto flex max-w-fit items-center justify-between gap-6"
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
                 >
                   <img
                     src="./images/star-plus-icon.svg"
@@ -472,17 +484,104 @@
               </div>
               <!-- Project 6 -->
               <div
-                class="rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
               >
                 <h5 class="text-md text-left">Money Maker</h5>
-                <p class="max-w-xs text-sm text-gray-400">
+                <p class="max-w-md text-sm text-gray-400">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                   facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
                   ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
                   odit.
                 </p>
                 <div
-                  class="mt-6 ml-auto flex max-w-fit items-center justify-between gap-6"
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
+                >
+                  <img
+                    src="./images/star-plus-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  /><img
+                    src="./images/eye-plus-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  /><img
+                    src="./images/share-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  />
+                </div>
+              </div>
+              <!-- Project 7 -->
+              <div
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+              >
+                <h5 class="text-md text-left">Other Project</h5>
+                <p class="max-w-md text-sm text-gray-400">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
+                  facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
+                  ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
+                  odit.
+                </p>
+                <div
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
+                >
+                  <img
+                    src="./images/star-plus-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  /><img
+                    src="./images/eye-plus-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  /><img
+                    src="./images/share-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  />
+                </div>
+              </div>
+              <!-- Project 6 -->
+              <div
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+              >
+                <h5 class="text-md text-left">Some Other Project</h5>
+                <p class="max-w-md text-sm text-gray-400">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
+                  facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
+                  ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
+                  odit.
+                </p>
+                <div
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
+                >
+                  <img
+                    src="./images/star-plus-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  /><img
+                    src="./images/eye-plus-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  /><img
+                    src="./images/share-icon.svg"
+                    alt=""
+                    class="ficon-orange w-6 cursor-pointer duration-150"
+                  />
+                </div>
+              </div>
+              <!-- Project 6 -->
+              <div
+                class="flex flex-col rounded-lg border-l-8 border-orange-500 bg-white px-4 py-6 shadow-xl"
+              >
+                <h5 class="text-md text-left">Imagine a Nice Project</h5>
+                <p class="max-w-md text-sm text-gray-400">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
+                  facilis vel! Dicta fugit, odio, sequi non totam tenetur eius
+                  ipsa rerum similique amet quas modi. Ipsam earum iusto impedit
+                  odit.
+                </p>
+                <div
+                  class="mt-auto ml-auto flex max-w-fit items-center justify-between gap-6"
                 >
                   <img
                     src="./images/star-plus-icon.svg"
@@ -502,7 +601,7 @@
             </div>
           </div>
           <!-- Announcements & Trending -->
-          <div class="">
+          <div class="flex flex-col gap-6">
             <!-- Announcements Container -->
             <div class="">
               <!-- Announcements Title -->
@@ -555,7 +654,7 @@
               <h4 class="mb-2 text-left text-lg font-semibold">Trending</h4>
               <!-- Trending Card Container -->
               <div
-                class="flex flex-col gap-4 rounded-lg bg-white px-6 py-6 shadow-md"
+                class="flex flex-col gap-4 rounded-lg bg-white px-8 py-6 shadow-md"
               >
                 <!-- Item 1 -->
                 <div class="flex items-center gap-4">
