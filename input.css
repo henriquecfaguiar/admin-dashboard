@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.project-container {
+  @apply flex flex-col gap-4 rounded-lg border-l-8 border-orange-500 bg-white px-4 pt-6 pb-4 shadow-md;
+}
+
 .filter-white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);
-}
-
-.filter-red {
-  filter: brightness(0) saturate(100%) invert(19%) sepia(91%) saturate(7371%)
-    hue-rotate(360deg) brightness(101%) contrast(105%);
 }
 
 .ficon-orange:hover {
